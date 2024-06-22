@@ -13,4 +13,5 @@ This project demonstrates a stunning 3D rotating cube created using HTML and CSS
 - 🔄 **Continuous Animation**: Seamless and infinite rotation animation.
 
 
-🚀  Made with ❤️ by Khushboo 🌟
+## ✨ ✍️Author
+🚀  Made with ❤️ by Khushboo Kumari 🌟
