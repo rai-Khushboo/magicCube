@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+}
+
+.cube {
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    transform:rotateX(-30deg);
+    animation: rotate 5s linear infinite;
+}
+
+.face {
+   position: absolute;
+    width: 200px;
+    height: 200px;
+    background: purple;
+    border: 2px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    backface-visibility: hidden;
+
+
+}
+
+.front  { transform: translateZ(100px);
+    position:absolute;
+    top: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    box-shadow:0 0 10px 5px #ED9B40,
+    0 0 200px 7px #BA3B46,
+    0 0 200px 20px #BA3B46,
+    0 0 30px 25px #ED9B40;
+    
+}
+.back   { transform: translateZ(-100px) rotateY(180deg);
+    position:absolute;
+    top: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    box-shadow:0 0 10px 5px #ED9B40,
+    0 0 200px 7px #BA3B46,
+    0 0 200px 20px #BA3B46,
+    0 0 30px 25px #ED9B40;
+     }
+.right  { transform: rotateY(90deg) translateZ(100px); 
+    position:absolute;
+    top: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    box-shadow:0 0 10px 5px #ED9B40,
+    0 0 200px 7px #BA3B46,
+    0 0 200px 20px #BA3B46,
+    0 0 30px 25px #ED9B40;
+    }
+.left   { transform: rotateY(-90deg) translateZ(100px);
+    position:absolute;
+    top: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    box-shadow:0 0 10px 5px #ED9B40,
+    0 0 200px 7px #BA3B46,
+    0 0 200px 20px #BA3B46,
+    0 0 30px 25px #ED9B40;
+     }
+.top    { 
+    transform: rotateX(90deg) translateZ(100px);
+    position: absolute;
+    top: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background: #333;
+    box-shadow:0 0 10px 5px #ED9B40,
+    0 0 200px 7px #BA3B46,
+    0 0 200px 20px #BA3B46,
+    0 0 30px 25px #ED9B40;
+    transform: rotateX(90deg) translateZ(150px);
+ }
+.bottom { transform: rotateX(-90deg) translateZ(100px); 
+    position:absolute;
+    top: 0;
+    top:0;
+    width: 100%;
+    height:100%;
+    box-shadow:0 0 10px 5px #ED9B40,
+    0 0 200px 7px #BA3B46,
+    0 0 200px 20px #BA3B46,
+    0 0 30px 25px #ED9B40;
+}
+
+@keyframes rotate {
+    0% { transform: rotateX(-30deg) rotateY(0); }
+    100% { transform: rotateX(-30deg) rotateY(360deg); }
+}
